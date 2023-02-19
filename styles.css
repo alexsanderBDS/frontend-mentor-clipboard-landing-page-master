@@ -212,3 +212,17 @@ p {
   width: calc(35rem / 16);
   margin-bottom: var(--24wpx);
 }
+
+.features {
+  margin-bottom: var(--80wpx);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--64wpx);
+}
+
+.features-icon {
+  width: var(--128wpx);
+}
