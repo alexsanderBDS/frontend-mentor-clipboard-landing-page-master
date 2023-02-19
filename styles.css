@@ -184,15 +184,23 @@ p {
   margin-bottom: var(--64wpx);
 }
 
+.track-topics {
+  margin-top: var(--80wpx);
+}
+
+.track-heading {
+  margin-bottom: var(--12wpx);
+}
+
 .track-topic {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: var(--64wpx);
   justify-content: center;
-  align-items: center;
 }
 .track-topic:last-child {
-  margin-bottom: 0;
+  margin-bottom: var(--80wpx);
 }
 
 .track-topic-heading {
