@@ -1,0 +1,206 @@
+/* FRONTEND MENTOR INITIAL STYLES */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  /* # SPACE SYSTEM */
+  /* ## TYPOGRAPHY - FONT SIZES */
+  --10px: calc(10rem / 16);
+  --12px: calc(12rem / 16);
+  --14px: calc(14rem / 16);
+  --16px: calc(16rem / 16);
+  --18px: calc(18rem / 16);
+  --20px: calc(20rem / 16);
+  --24px: calc(24rem / 16);
+  --36px: calc(36rem / 16);
+  --44px: calc(44rem / 16);
+  --52px: calc(52rem / 16);
+  --62px: calc(62rem / 16);
+  --74px: calc(74rem / 16);
+  --86px: calc(86rem / 16);
+  --98px: calc(98rem / 16);
+
+  /* CUSTOM */
+  --30px: calc(30rem / 16);
+
+  /* ## WHITESPACE */
+  --2wpx: calc(2rem / 16);
+  --4wpx: calc(4rem / 16);
+  --8wpx: calc(8rem / 16);
+  --12wpx: calc(12rem / 16);
+  --16wpx: calc(16rem / 16);
+  --24wpx: calc(24rem / 16);
+  --32wpx: calc(32rem / 16);
+  --48wpx: calc(48rem / 16);
+  --64wpx: calc(64rem / 16);
+  --80wpx: calc(80rem / 16);
+  --96wpx: calc(96rem / 16);
+  --128wpx: calc(128rem / 16);
+
+  /* # COLORS */
+  /* ## PRIMARY */
+  --color-psc: hsl(171, 66%, 44%);
+  --color-plg: hsl(233, 100%, 69%);
+  /* ## Neutral */
+  --color-ndgb: hsl(210, 10%, 33%);
+  --color-ngb: hsl(201, 11%, 66%);
+
+  /* # SHADOWS */
+  --shadow-btn: inset 0px -3px 3px 0px #0000002b;
+}
+
+body {
+  font-size: var(--10px);
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  background-color: #000;
+  color: var(--color-ndgb);
+}
+
+/* REUSABLE */
+.btn {
+  width: 100%;
+  padding: var(--16wpx);
+  border-radius: var(--24wpx);
+  box-shadow: var(--shadow-btn);
+  font-size: var(--16px);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.heading {
+  font-size: var(--30px);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.text {
+  font-size: var(--16px);
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* REUSABLE */
+
+p {
+  color: var(--color-ngb);
+}
+
+.container {
+  min-width: calc(375rem / 16);
+
+  margin: 0 auto;
+  padding: 0 var(--32wpx);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+}
+
+.hero-section {
+  margin: var(--80wpx) 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--16wpx);
+}
+
+.logo {
+  margin-bottom: var(--24wpx);
+}
+
+.hero-heading {
+}
+
+.hero-text {
+  margin-bottom: var(--24wpx);
+}
+
+.hero-btn-ios {
+  background-color: var(--color-psc);
+  color: #fff;
+}
+.hero-btn-mac {
+  background-color: var(--color-plg);
+  color: #fff;
+}
+
+.info-section {
+  margin: var(--80wpx) 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--16wpx);
+}
+
+.info-text {
+  margin-bottom: var(--24wpx);
+}
+
+.info-img {
+  width: 100%;
+  margin-bottom: var(--24wpx);
+}
+
+.info-topics {
+  display: flex;
+  flex-direction: column;
+  gap: var(--12wpx);
+  margin-bottom: var(--24wpx);
+}
+
+.track-section {
+  margin: var(--80wpx) 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--16wpx);
+}
+
+.track-img {
+  width: 100%;
+}
+
+.track-text {
+  margin-bottom: var(--64wpx);
+}
+
+.track-topic {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--64wpx);
+  justify-content: center;
+  align-items: center;
+}
+.track-topic:last-child {
+  margin-bottom: 0;
+}
+
+.track-topic-heading {
+  font-size: var(--24px);
+  margin-bottom: var(--24wpx);
+}
+
+.track-topic-img {
+  width: calc(35rem / 16);
+  margin-bottom: var(--24wpx);
+}
